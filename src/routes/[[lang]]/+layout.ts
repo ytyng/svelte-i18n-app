@@ -4,12 +4,11 @@ import type {LayoutLoad} from './$types'
 
 export const load: LayoutLoad = async ({params}) => {
   console.log('layout load', params.lang)
+  await waitLocale()
   if (params.lang) {
     console.log('locale set', params.lang)
     locale.set(params.lang)
   }
-  await waitLocale()
-
 }
 
 export const prerender = true;

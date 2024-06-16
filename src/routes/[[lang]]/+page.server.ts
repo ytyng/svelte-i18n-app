@@ -6,5 +6,6 @@ export function entries() {
     {lang: ''},
     {lang: 'ja'},
     {lang: 'en'},
+    {lang: 'de'},
   ];
 }
