@@ -1,7 +1,7 @@
 import {browser} from '$app/environment'
 import '$lib/i18n' // Import to initialize. Important :)
 import {locale, waitLocale} from 'svelte-i18n'
-import type {LayoutLoad} from './$types'
+import type {LayoutLoad} from '../../../.svelte-kit/types/src/routes'
 
 export const load: LayoutLoad = async () => {
   console.log('root layout load')
@@ -14,3 +14,6 @@ export const load: LayoutLoad = async () => {
   // }
   // await waitLocale()
 }
+
+export const prerender = true;
+export const trailingSlash = 'always';

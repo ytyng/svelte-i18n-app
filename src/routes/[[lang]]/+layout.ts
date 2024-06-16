@@ -9,4 +9,8 @@ export const load: LayoutLoad = async ({params}) => {
     locale.set(params.lang)
   }
   await waitLocale()
+
 }
+
+export const prerender = true;
+export const trailingSlash = 'always';
