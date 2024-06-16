@@ -1,6 +1,4 @@
 <script lang="ts">
-  // import { _ } from 'svelte-i18n'
-
   import {getMessages} from '$lib/i18n/pathlocales'
 
   export let data
